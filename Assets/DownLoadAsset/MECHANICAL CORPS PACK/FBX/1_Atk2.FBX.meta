@@ -1,0 +1,355 @@
+fileFormatVersion: 2
+guid: 1a774ebc6ebc5494ebede11c014fed81
+timeCreated: 1462266843
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Bone001
+    100004: Bone003
+    100006: Bone005
+    100008: Bone007
+    100010: Bone009
+    100012: Bone011
+    100014: Bone013
+    100016: Bone015
+    100018: Bone017
+    100020: Bone019
+    100022: Bone021
+    100024: Bone023
+    100026: Bone026
+    100028: Bone029
+    100030: Bone031
+    100032: Bone032
+    100034: Bone033
+    100036: Bone035
+    100038: Bone036
+    100040: Bone037
+    100042: Bone039
+    100044: Bone040
+    100046: Bone042
+    100048: Bone043
+    100050: Bone044
+    100052: Bone046
+    100054: Bone047
+    100056: Bone048
+    100058: Bone049
+    100060: Bone051
+    100062: Bone052
+    100064: Bone053
+    100066: Bone055
+    100068: Bone056
+    100070: Bone057
+    100072: Bone059
+    100074: Bone060
+    100076: Bone061
+    100078: ironreaver01
+    100080: Plane001
+    400000: //RootNode
+    400002: Bone001
+    400004: Bone003
+    400006: Bone005
+    400008: Bone007
+    400010: Bone009
+    400012: Bone011
+    400014: Bone013
+    400016: Bone015
+    400018: Bone017
+    400020: Bone019
+    400022: Bone021
+    400024: Bone023
+    400026: Bone026
+    400028: Bone029
+    400030: Bone031
+    400032: Bone032
+    400034: Bone033
+    400036: Bone035
+    400038: Bone036
+    400040: Bone037
+    400042: Bone039
+    400044: Bone040
+    400046: Bone042
+    400048: Bone043
+    400050: Bone044
+    400052: Bone046
+    400054: Bone047
+    400056: Bone048
+    400058: Bone049
+    400060: Bone051
+    400062: Bone052
+    400064: Bone053
+    400066: Bone055
+    400068: Bone056
+    400070: Bone057
+    400072: Bone059
+    400074: Bone060
+    400076: Bone061
+    400078: ironreaver01
+    400080: Plane001
+    2300000: Bone015
+    2300002: Bone017
+    2300004: Bone026
+    2300006: Bone029
+    2300008: Bone031
+    2300010: Bone032
+    2300012: Bone033
+    2300014: Bone035
+    2300016: Bone036
+    2300018: Bone037
+    2300020: Bone039
+    2300022: Bone040
+    2300024: Bone042
+    2300026: Bone043
+    2300028: Bone044
+    2300030: Bone046
+    2300032: Bone047
+    2300034: Bone048
+    2300036: Bone049
+    2300038: Bone051
+    2300040: Bone052
+    2300042: Bone053
+    2300044: Bone055
+    2300046: Bone056
+    2300048: Bone057
+    2300050: Bone059
+    2300052: Bone060
+    2300054: Bone061
+    2300056: Plane001
+    3300000: Bone015
+    3300002: Bone017
+    3300004: Bone026
+    3300006: Bone029
+    3300008: Bone031
+    3300010: Bone032
+    3300012: Bone033
+    3300014: Bone035
+    3300016: Bone036
+    3300018: Bone037
+    3300020: Bone039
+    3300022: Bone040
+    3300024: Bone042
+    3300026: Bone043
+    3300028: Bone044
+    3300030: Bone046
+    3300032: Bone047
+    3300034: Bone048
+    3300036: Bone049
+    3300038: Bone051
+    3300040: Bone052
+    3300042: Bone053
+    3300044: Bone055
+    3300046: Bone056
+    3300048: Bone057
+    3300050: Bone059
+    3300052: Bone060
+    3300054: Bone061
+    3300056: Plane001
+    4300000: ironreaver01
+    4300002: Bone015
+    4300004: Bone017
+    4300006: Bone031
+    4300008: Bone032
+    4300010: Bone033
+    4300012: Bone035
+    4300014: Bone036
+    4300016: Bone037
+    4300018: Bone042
+    4300020: Bone039
+    4300022: Bone040
+    4300024: Bone046
+    4300026: Bone043
+    4300028: Bone044
+    4300030: Bone047
+    4300032: Bone048
+    4300034: Bone049
+    4300036: Bone051
+    4300038: Bone052
+    4300040: Bone053
+    4300042: Bone055
+    4300044: Bone056
+    4300046: Bone057
+    4300048: Bone059
+    4300050: Bone060
+    4300052: Bone061
+    4300054: Bone026
+    4300056: Bone029
+    4300058: Plane001
+    7400000: 1_Atk2
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: ironreaver01
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 1
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 30
+    animationPositionError: 30
+    animationScaleError: 30
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: 1_Atk2
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 90
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bone001
+        weight: 1
+      - path: Bone003
+        weight: 1
+      - path: Bone005
+        weight: 1
+      - path: Bone007
+        weight: 1
+      - path: Bone009
+        weight: 1
+      - path: Bone011
+        weight: 1
+      - path: Bone013
+        weight: 1
+      - path: Bone015
+        weight: 1
+      - path: Bone017
+        weight: 1
+      - path: Bone019
+        weight: 1
+      - path: Bone021
+        weight: 1
+      - path: Bone023
+        weight: 1
+      - path: Bone026
+        weight: 1
+      - path: Bone029
+        weight: 1
+      - path: Bone031
+        weight: 1
+      - path: Bone031/Bone032
+        weight: 1
+      - path: Bone031/Bone032/Bone033
+        weight: 1
+      - path: Bone035
+        weight: 1
+      - path: Bone035/Bone036
+        weight: 1
+      - path: Bone035/Bone036/Bone037
+        weight: 1
+      - path: Bone042
+        weight: 1
+      - path: Bone042/Bone039
+        weight: 1
+      - path: Bone042/Bone039/Bone040
+        weight: 1
+      - path: Bone046
+        weight: 1
+      - path: Bone046/Bone043
+        weight: 1
+      - path: Bone046/Bone043/Bone044
+        weight: 1
+      - path: Bone047
+        weight: 1
+      - path: Bone047/Bone048
+        weight: 1
+      - path: Bone047/Bone048/Bone049
+        weight: 1
+      - path: Bone051
+        weight: 1
+      - path: Bone051/Bone052
+        weight: 1
+      - path: Bone051/Bone052/Bone053
+        weight: 1
+      - path: Bone055
+        weight: 1
+      - path: Bone055/Bone056
+        weight: 1
+      - path: Bone055/Bone056/Bone057
+        weight: 1
+      - path: Bone059
+        weight: 1
+      - path: Bone059/Bone060
+        weight: 1
+      - path: Bone059/Bone060/Bone061
+        weight: 1
+      - path: ironreaver01
+        weight: 1
+      - path: Plane001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: charactor/res/ironreaver/animation_b_
+  assetBundleVariant: 

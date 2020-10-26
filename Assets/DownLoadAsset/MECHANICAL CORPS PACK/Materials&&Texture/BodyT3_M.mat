@@ -1,0 +1,179 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: BodyT3_M
+  m_Shader: {fileID: 4800000, guid: 1c6882a2268b341de9af59f48562ca06, type: 3}
+  m_ShaderKeywords: _ALBEDO_ADJUST _DIFFUSE_ADJUST _EMISSION _FRESNEL _NORMALMAP
+    _NO_GAMMA_CORRECT _RM_GR _SPECULAR_GAMMA_GGX _SPECULAR_PHONG
+  m_LightmapFlags: 1
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: a48d2cbb83f249d48bbdc41b9ded6f61, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpTex:
+        m_Texture: {fileID: 2800000, guid: a48d2cbb83f249d48bbdc41b9ded6f61, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailBumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DissolveTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 2800000, guid: 6603ef43dca70a644bb89fbcfdeed9f0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 4969d48c7834c40489e4c155fa762225, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _PrimaryMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SecondaryMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SkinMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecularMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _BlendMode: 0
+    - _BloomSuppress: 2
+    - _BumpIntensity: 1
+    - _BumpScale: 1
+    - _Custom: 0
+    - _Cutoff: 0.5
+    - _CutoffThreshold: -1
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _EmissionScaleUI: 1
+    - _Fresnel: 1
+    - _FresnelIntensity: 0.53
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _HairIntensity: 0.5
+    - _Metallic: 0.83
+    - _Mode: 0
+    - _NoiseIntensity: 1
+    - _NoiseTilingX: 1
+    - _NoiseTilingY: 1
+    - _OcclusionBlendingScale: 0.01
+    - _OcclusionOffsetMeters: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _PrimaryPower: 200
+    - _PrimaryShift: 0
+    - _ReflectionMips: 3.2504125
+    - _RimInner: 0
+    - _RimIntensity: 1
+    - _RimOuter: 0.34
+    - _SecondaryPower: 200
+    - _SecondaryShift: 0.3
+    - _Smoothness: 0.636
+    - _SmoothnessTextureChannel: 0
+    - _Specular: 1
+    - _SpecularHighlights: 1
+    - _SpecularIntensity: 3.34
+    - _SrcBlend: 1
+    - _Test: 0
+    - _Texture: 1
+    - _UVSec: 0
+    - _ZWrite: 1
+    - __cutoff_adjust: 0
+    - __dest_alpha_blend: 0
+    - __dest_color_blend: 0
+    - __source_alpha_blend: 1
+    - __source_color_blend: 1
+    - __z_write: 1
+    m_Colors:
+    - _AlbedoAdd: {r: 0, g: 0, b: 0, a: 0}
+    - _AlbedoMul: {r: 1.33, g: 1.2028676, b: 1.2028676, a: 1}
+    - _AlbedoPower: {r: 0, g: 1, b: 1, a: 0}
+    - _Color: {r: 1.33, g: 1.2028676, b: 1.2028676, a: 1}
+    - _DetailMap_ST: {r: 1, g: 1, b: 0, a: 0}
+    - _DetailScale: {r: 2, g: 0, b: 1, a: 0}
+    - _DiffuseAdjust: {r: 0.5, g: 0.5, b: 0, a: 0}
+    - _DiffuseParam: {r: 1, g: 1, b: 0.5, a: 0.5}
+    - _EmissionColor: {r: 0, g: 0.82265496, b: 1.63404, a: 1}
+    - _EmissionColorUI: {r: 0, g: 0, b: 0, a: 1}
+    - _Fresnel: {r: 1.16, g: 0.5103376, b: 1, a: 1.0013674}
+    - _OcclusionStrength: {r: 0, g: 1, b: 0, a: 0}
+    - _OverlightParam: {r: 1, g: 0.25, b: 0.25, a: -0.25}
+    - _PrimaryColor: {r: 1, g: 1, b: 1, a: 1}
+    - _RimInnerAdd: {r: -50.5, g: -50.5, b: -50.5, a: 1}
+    - _RimInnerColor: {r: 0.5, g: 0.5, b: 0.5, a: 0}
+    - _RimInnerMul: {r: 50.5, g: 50.5, b: 50.5, a: 1}
+    - _RimOuterAdd: {r: 0.47018337, g: 0.47018337, b: 0.47018337, a: 1}
+    - _RimOuterColor: {r: 0.227, g: 0.11741379, b: 0, a: 1}
+    - _RimOuterMul: {r: -0.5110689, g: -0.5110689, b: -0.5110689, a: 1}
+    - _RoughnessGGX: {r: 2, g: 0.005587992, b: -0.9824448, a: 1}
+    - _RoughnessVisibility: {r: 1.735008, g: 0.13249601, b: 0.13249601, a: 0.00001}
+    - _Roughness_Phong: {r: 0.636, g: 11.392639, b: 41.487, a: 1}
+    - _SecondaryColor: {r: 1, g: 1, b: 1, a: 1}
+    - _SkinColor: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecColor: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecularColor: {r: 0.45642072, g: 0.35504875, b: 0.19129398, a: 1}
+    - _SpecularColor_Original: {r: 0.99655175, g: 0.77521557, b: 0.41767246, a: 0.458}
+    - _SpecularMetallic: {r: -0.936, g: -0.50814396, b: 3.1262398, a: 0.047027208}
+    - _SpecularParam: {r: 3.9, g: 1.04, b: 50, a: 0.432}

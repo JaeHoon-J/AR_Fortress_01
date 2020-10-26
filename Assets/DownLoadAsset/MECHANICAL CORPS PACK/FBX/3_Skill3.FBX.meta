@@ -1,0 +1,495 @@
+fileFormatVersion: 2
+guid: 9bd135c241cf489488a52064417fe08f
+timeCreated: 1558695364
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Bip001
+    100004: Bip001 Head
+    100006: Bip001 L Calf
+    100008: Bip001 L Clavicle
+    100010: Bip001 L Foot
+    100012: Bip001 L Forearm
+    100014: Bip001 L Hand
+    100016: Bip001 L Thigh
+    100018: Bip001 L Toe0
+    100020: Bip001 L UpperArm
+    100022: Bip001 Neck
+    100024: Bip001 Pelvis
+    100026: Bip001 R Calf
+    100028: Bip001 R Clavicle
+    100030: Bip001 R Foot
+    100032: Bip001 R Forearm
+    100034: Bip001 R Hand
+    100036: Bip001 R Thigh
+    100038: Bip001 R Toe0
+    100040: Bip001 R UpperArm
+    100042: Bip001 Spine
+    100044: bone000
+    100046: bone001
+    100048: bone002
+    100050: bone003
+    100052: bone004
+    100054: bone005
+    100056: bone006
+    100058: bone007
+    100060: bone008
+    100062: bone009
+    100064: bone010
+    100066: bone011
+    100068: bone012
+    100070: bone013
+    100072: bone014
+    100074: bone015
+    100076: bone016
+    100078: bone017
+    100080: bone018
+    100082: bone019
+    100084: bone020
+    100086: bone021
+    100088: bone022
+    100090: bone023
+    100092: bone024
+    100094: bone025
+    100096: bone026
+    100098: bone027
+    100100: bone028
+    100102: bone029
+    100104: bone030
+    100106: bone031
+    100108: bone032
+    100110: bone033
+    100112: bone034
+    100114: bone035
+    100116: bone036
+    100118: bone037
+    100120: bone038
+    100122: bone039
+    100124: bone040
+    100126: bone041
+    100128: bone042
+    100130: bone043
+    100132: bone044
+    100134: bone045
+    100136: bone046
+    100138: bone047
+    100140: bone048
+    100142: bone049
+    100144: bone050
+    100146: bone051
+    100148: bone052
+    100150: bone053
+    100152: bone054
+    100154: bone055
+    100156: bone056
+    100158: bone057
+    100160: bone058
+    100162: bone059
+    100164: bone060
+    100166: bone061
+    100168: bone062
+    100170: bone063
+    100172: bone064
+    100174: bone065
+    100176: bone066
+    100178: bone067
+    100180: bone068
+    100182: bone069
+    100184: bone070
+    100186: bone071
+    100188: bone072
+    100190: bone073
+    400000: //RootNode
+    400002: Bip001
+    400004: Bip001 Head
+    400006: Bip001 L Calf
+    400008: Bip001 L Clavicle
+    400010: Bip001 L Foot
+    400012: Bip001 L Forearm
+    400014: Bip001 L Hand
+    400016: Bip001 L Thigh
+    400018: Bip001 L Toe0
+    400020: Bip001 L UpperArm
+    400022: Bip001 Neck
+    400024: Bip001 Pelvis
+    400026: Bip001 R Calf
+    400028: Bip001 R Clavicle
+    400030: Bip001 R Foot
+    400032: Bip001 R Forearm
+    400034: Bip001 R Hand
+    400036: Bip001 R Thigh
+    400038: Bip001 R Toe0
+    400040: Bip001 R UpperArm
+    400042: Bip001 Spine
+    400044: bone000
+    400046: bone001
+    400048: bone002
+    400050: bone003
+    400052: bone004
+    400054: bone005
+    400056: bone006
+    400058: bone007
+    400060: bone008
+    400062: bone009
+    400064: bone010
+    400066: bone011
+    400068: bone012
+    400070: bone013
+    400072: bone014
+    400074: bone015
+    400076: bone016
+    400078: bone017
+    400080: bone018
+    400082: bone019
+    400084: bone020
+    400086: bone021
+    400088: bone022
+    400090: bone023
+    400092: bone024
+    400094: bone025
+    400096: bone026
+    400098: bone027
+    400100: bone028
+    400102: bone029
+    400104: bone030
+    400106: bone031
+    400108: bone032
+    400110: bone033
+    400112: bone034
+    400114: bone035
+    400116: bone036
+    400118: bone037
+    400120: bone038
+    400122: bone039
+    400124: bone040
+    400126: bone041
+    400128: bone042
+    400130: bone043
+    400132: bone044
+    400134: bone045
+    400136: bone046
+    400138: bone047
+    400140: bone048
+    400142: bone049
+    400144: bone050
+    400146: bone051
+    400148: bone052
+    400150: bone053
+    400152: bone054
+    400154: bone055
+    400156: bone056
+    400158: bone057
+    400160: bone058
+    400162: bone059
+    400164: bone060
+    400166: bone061
+    400168: bone062
+    400170: bone063
+    400172: bone064
+    400174: bone065
+    400176: bone066
+    400178: bone067
+    400180: bone068
+    400182: bone069
+    400184: bone070
+    400186: bone071
+    400188: bone072
+    400190: bone073
+    7400000: 3_Skill3
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: 3_Skill3
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 70
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bip001
+        weight: 1
+      - path: Bip001/Bip001 Pelvis
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 L Thigh
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 L Thigh/Bip001 L Calf
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 L Thigh/Bip001 L Calf/Bip001
+          L Foot
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 L Thigh/Bip001 L Calf/Bip001
+          L Foot/Bip001 L Toe0
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Neck
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Neck/Bip001 Head
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Neck/Bip001 L Clavicle
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Neck/Bip001 L Clavicle/Bip001
+          L UpperArm
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Neck/Bip001 L Clavicle/Bip001
+          L UpperArm/Bip001 L Forearm
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Neck/Bip001 L Clavicle/Bip001
+          L UpperArm/Bip001 L Forearm/Bip001 L Hand
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Neck/Bip001 R Clavicle
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Neck/Bip001 R Clavicle/Bip001
+          R UpperArm
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Neck/Bip001 R Clavicle/Bip001
+          R UpperArm/Bip001 R Forearm
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Neck/Bip001 R Clavicle/Bip001
+          R UpperArm/Bip001 R Forearm/Bip001 R Hand
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 R Thigh
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 R Thigh/Bip001 R Calf
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 R Thigh/Bip001 R Calf/Bip001
+          R Foot
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 R Thigh/Bip001 R Calf/Bip001
+          R Foot/Bip001 R Toe0
+        weight: 1
+      - path: bone000
+        weight: 1
+      - path: bone001
+        weight: 1
+      - path: bone002
+        weight: 1
+      - path: bone003
+        weight: 1
+      - path: bone004
+        weight: 1
+      - path: bone005
+        weight: 1
+      - path: bone006
+        weight: 1
+      - path: bone007
+        weight: 1
+      - path: bone008
+        weight: 1
+      - path: bone009
+        weight: 1
+      - path: bone010
+        weight: 1
+      - path: bone011
+        weight: 1
+      - path: bone012
+        weight: 1
+      - path: bone013
+        weight: 1
+      - path: bone014
+        weight: 1
+      - path: bone015
+        weight: 1
+      - path: bone016
+        weight: 1
+      - path: bone017
+        weight: 1
+      - path: bone018
+        weight: 1
+      - path: bone019
+        weight: 1
+      - path: bone020
+        weight: 1
+      - path: bone020/bone021
+        weight: 1
+      - path: bone020/bone022
+        weight: 1
+      - path: bone023
+        weight: 1
+      - path: bone024
+        weight: 1
+      - path: bone025
+        weight: 1
+      - path: bone026
+        weight: 1
+      - path: bone027
+        weight: 1
+      - path: bone028
+        weight: 1
+      - path: bone029
+        weight: 1
+      - path: bone030
+        weight: 1
+      - path: bone031
+        weight: 1
+      - path: bone032
+        weight: 1
+      - path: bone033
+        weight: 1
+      - path: bone034
+        weight: 1
+      - path: bone035
+        weight: 1
+      - path: bone036
+        weight: 1
+      - path: bone037
+        weight: 1
+      - path: bone038
+        weight: 1
+      - path: bone039
+        weight: 1
+      - path: bone040
+        weight: 1
+      - path: bone041
+        weight: 1
+      - path: bone042
+        weight: 1
+      - path: bone043
+        weight: 1
+      - path: bone044
+        weight: 1
+      - path: bone045
+        weight: 1
+      - path: bone046
+        weight: 1
+      - path: bone046/bone047
+        weight: 1
+      - path: bone046/bone047/bone048
+        weight: 1
+      - path: bone046/bone047/bone048/bone049
+        weight: 1
+      - path: bone046/bone050
+        weight: 1
+      - path: bone046/bone050/bone051
+        weight: 1
+      - path: bone046/bone050/bone051/bone052
+        weight: 1
+      - path: bone046/bone053
+        weight: 1
+      - path: bone046/bone053/bone054
+        weight: 1
+      - path: bone046/bone053/bone054/bone055
+        weight: 1
+      - path: bone046/bone056
+        weight: 1
+      - path: bone046/bone056/bone057
+        weight: 1
+      - path: bone046/bone056/bone057/bone058
+        weight: 1
+      - path: bone059
+        weight: 1
+      - path: bone059/bone060
+        weight: 1
+      - path: bone059/bone060/bone061
+        weight: 1
+      - path: bone059/bone060/bone061/bone062
+        weight: 1
+      - path: bone059/bone063
+        weight: 1
+      - path: bone059/bone063/bone064
+        weight: 1
+      - path: bone059/bone063/bone064/bone065
+        weight: 1
+      - path: bone059/bone066
+        weight: 1
+      - path: bone059/bone066/bone067
+        weight: 1
+      - path: bone059/bone066/bone067/bone068
+        weight: 1
+      - path: bone059/bone069
+        weight: 1
+      - path: bone059/bone069/bone070
+        weight: 1
+      - path: bone059/bone069/bone070/bone071
+        weight: 1
+      - path: bone072
+        weight: 1
+      - path: bone073
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

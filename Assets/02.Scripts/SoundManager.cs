@@ -79,11 +79,25 @@ public class SoundManager : MonoBehaviour
     protected AudioClip labSceneClip;
 
     //여기는 effect 관련 clip을 넣자.
-    //[SerializeField]
-    //protected AudioClip
-
+    [SerializeField]
+    protected AudioClip clickSoundClip;
+    [SerializeField]
+    protected AudioClip moveSceneSoundClip;
+    [SerializeField]
+    protected AudioClip sceneStartSoundClip;
+    [SerializeField]
+    protected AudioClip labAssembleSoundClip;
+    [SerializeField]
+    protected AudioClip errorSoundClip;
+    //여기는 걷고 쏘고 터지고 하는 이펙트 소리들
+    [SerializeField]
+    protected AudioClip tankSoundClip;
     [SerializeField]
     protected AudioClip walkClip;
+    [SerializeField]
+    protected AudioClip shotSoundClip;
+    [SerializeField]
+    protected AudioClip explosionSoundClip;
     private void Start()
     {
         bgmSource = AddAudio(true, false, 0.75f);//bgm audio source 추가

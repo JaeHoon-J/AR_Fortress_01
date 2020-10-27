@@ -745,7 +745,16 @@ MonoBehaviour:
   resultTimeClip: {fileID: 8300000, guid: 3819c52b453e2bb43bbb6057fbf1fea2, type: 3}
   storeSceneClip: {fileID: 8300000, guid: 886fa54fa0e3be84c864e66d8907765e, type: 3}
   labSceneClip: {fileID: 8300000, guid: 2417e0a7ff15b1544bb2ec95ea2b609c, type: 3}
-  walkClip: {fileID: 8300000, guid: 91bb13564e4a28344b010edc7e191e50, type: 3}
+  clickSoundClip: {fileID: 8300000, guid: f3b4479bef5c6d644849888b973164b8, type: 3}
+  moveSceneSoundClip: {fileID: 8300000, guid: dc765c4f6416f6b4d8601ba2ee25adbc, type: 3}
+  sceneStartSoundClip: {fileID: 8300000, guid: f68647540f4f7ce40a09ba6bc417bcab, type: 3}
+  labAssembleSoundClip: {fileID: 8300000, guid: 84e4b4c7ad5fe2347a12f56fbd71e1c1,
+    type: 3}
+  errorSoundClip: {fileID: 8300000, guid: efc0e483570163a49a50334a4166d56f, type: 3}
+  tankSoundClip: {fileID: 8300000, guid: 78b2a269ade941447aa3fc1d495d2123, type: 3}
+  walkClip: {fileID: 8300000, guid: bd9cd35d5646b354fbbd893edd93018f, type: 3}
+  shotSoundClip: {fileID: 8300000, guid: 280c3ab514cea474684b3fce3239b1ad, type: 3}
+  explosionSoundClip: {fileID: 8300000, guid: 66094796b11047e4a949535386f5091d, type: 3}
 --- !u!1 &875959274
 GameObject:
   m_ObjectHideFlags: 0
@@ -1449,6 +1458,12 @@ MonoBehaviour:
   isFireCheck: 0
   firstAnchor: 0
   slotOrder: 0
+  misillListInScent: []
+  myDmg: 0
+  myAmor: 0
+  myHp: 0
+  isDie: 0
+  aliveCnt: 0
 --- !u!1 &1689635099
 GameObject:
   m_ObjectHideFlags: 0
@@ -1537,6 +1552,9 @@ MonoBehaviour:
   weaponattack: 0
   isloadOver: 0
   istypeNoeSame: 0
+  beforeLegName: 
+  beforeBodyName: 
+  beforeWeaponName: 
   Msg: 
 --- !u!1 &1706726179
 GameObject:

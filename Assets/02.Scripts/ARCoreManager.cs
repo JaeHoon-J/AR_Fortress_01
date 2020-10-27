@@ -35,18 +35,20 @@ public class ARCoreManager: MonoBehaviourPunCallbacks
     protected Text checkMasterText;
     [SerializeField]
     protected Text nowPower;
+    [SerializeField]
+    protected Text nowHp;
 
     private void Start()
     {
        
         DistanceFromCenter = 0.5f;
         //ARCamera = GameObject.Find("First Person Camera").GetComponent<Camera>();
-
+        PhotonManager.Instance.aliveCnt = PhotonManager.Instance.localPlayer; //현재 방에유저의 수 = 시작시 살아있는 사람수
     }
 
     private void Update()
     {
-
+        nowHp.text = "현재 체력은 = " + PhotonManager.Instance.myHp.ToString();
         if(PhotonManager.Instance.isMaster == true)
         {
             idreceiveCnt.text = "앵커 아이디 전달받은 플레이어수: "+PhotonManager.Instance.receiveCnt.ToString();

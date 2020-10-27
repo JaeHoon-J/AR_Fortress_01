@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PhotonServerSettings
   m_EditorClassIdentifier: 
   AppSettings:
-    AppIdRealtime: 56a406b2-b2a3-442a-b1a8-cf7350a6cef4
+    AppIdRealtime: 7c139742-5a81-4bb1-bc26-94c98d32ddc8
     AppIdChat: 
     AppIdVoice: 
     AppVersion: 
@@ -25,32 +25,36 @@ MonoBehaviour:
     AuthMode: 0
     EnableLobbyStatistics: 0
     NetworkLogging: 1
-  DevRegion: kr
+  DevRegion: 
   PunLogging: 0
   EnableSupportLogger: 0
   RunInBackground: 1
   StartInOfflineMode: 0
   RpcList:
-  - CheckResolve
   - ClickRpc
   - DestroyRpc
   - DestroySpaceship
   - Fire
+  - RespawnSpaceship
+  - ChangeTurn
+  - CheckResolve
+  - DeleteMyInfoWaitingRoom
   - InstantePlayer
+  - MakeFirstAnchor
   - MakeMyRobot
   - MakeTestBot
   - ReceiveId
-  - ResolveRpc
-  - RespawnSpaceship
-  - RPC_SendAnchorId
-  - UpdateRoomCustomProperty
-  - ChangeTurn
-  - DeleteMyInfoWaitingRoom
-  - MakeFirstAnchor
   - RequestOtherUsersInfo
+  - ResolveRpc
   - RespondForRequest
+  - RPC_SendAnchorId
   - SendMyInfoInWaitingRoom
   - SendShootValue
+  - UpdateRoomCustomProperty
+  - DestroyMisillInScene
+  - CheckDamage
+  - PlusDieCount
+  - MinusAliveCnt
   DisableAutoOpenWizard: 1
   ShowSettings: 0
-  DevRegionSetOnce: 1
+  DevRegionSetOnce: 0

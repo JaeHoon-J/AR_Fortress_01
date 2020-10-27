@@ -116,6 +116,11 @@ MonoBehaviour:
   dir: {x: 0, y: 0, z: 0}
   speed: 0
   rb: {fileID: 3531975787239906253}
+  explosion: {fileID: 2957902239405529570, guid: 84245269576e7cc4bb3cd79338aa8a3c,
+    type: 3}
+  startEffecf: {fileID: 2954060377297946764, guid: 931457926a15a864f9b9d2a8029c21c7,
+    type: 3}
+  isMasterMisill: 0
 --- !u!114 &3531975787239906249
 MonoBehaviour:
   m_ObjectHideFlags: 0

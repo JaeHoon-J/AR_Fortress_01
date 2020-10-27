@@ -39,6 +39,7 @@ public class Projectile : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+        if (m_Rigidbody == null) return;
         if (m_Rigidbody.IsSleeping() && !m_Rigidbody.isKinematic)
         {
             m_Rigidbody.isKinematic = true;

@@ -23,6 +23,10 @@ Material:
         m_Texture: {fileID: 2800000, guid: b5d6ffdf77259f34a81e69827db44a87, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _CurrentDepthTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Illum:
         m_Texture: {fileID: 2800000, guid: 031ffbb1a5f7d65429d79e077836488b, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -35,7 +39,7 @@ Material:
     - _EmissionLM: 0
     - _Glossiness: 0.5
     - _Metallic: 0
-    - _OcclusionBlendingScale: 0.01
+    - _OcclusionBlendingScale: 0.5
     - _OcclusionOffsetMeters: 0
     - _Shininess: 0.078125
     m_Colors:

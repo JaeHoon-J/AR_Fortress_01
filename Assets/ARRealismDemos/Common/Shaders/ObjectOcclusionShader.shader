@@ -24,6 +24,7 @@ Shader "ARRealism/Object Occlusion Shader"
     {
         _Color ("Color", Color) = (1,1,1,1)
         _MainTex ("Albedo (RGB)", 2D) = "white" {}
+        //_CurrentDepthTexture("Depth Texture", 2D) = "black" {}
 
         [Space]
         // The size of screen-space alpha blending between visible and occluded regions.

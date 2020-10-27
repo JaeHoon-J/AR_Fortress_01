@@ -69,6 +69,12 @@ public class Player : MonoBehaviourPunCallbacks
         legObj.GetComponent<LegParts>().OnDepthMateiral();
         bodyObj.GetComponent<BodyParts>().OnDepthMateiral();
         weaponObj.GetComponent<WeaponParts>().OnDepthMateiral();
+        if(PhotonManager.Instance.myOrder == actnum)
+        {
+            PhotonManager.Instance.myHp = hp;
+            PhotonManager.Instance.myAmor = amor;
+            PhotonManager.Instance.myDmg = attack;
+        }
     }
 
     
@@ -166,6 +172,8 @@ public class Player : MonoBehaviourPunCallbacks
             GameObject obj = Instantiate(depthMissile, firePos1.transform.position, Quaternion.identity);
             obj.GetComponent<MissileShoot>().dir = firePos1.transform.forward;
             obj.GetComponent<MissileShoot>().speed = lange * 0.05f;
+            obj.GetComponent<MissileShoot>().isMasterMisill = true;
+            PhotonManager.Instance.misillListInScent.Add(obj); //발사된 미사일은 리스트에 추가
         }
 
         if (firePos2 != null)
@@ -173,6 +181,8 @@ public class Player : MonoBehaviourPunCallbacks
             GameObject obj = Instantiate(depthMissile, firePos2.transform.position, Quaternion.identity);
             obj.GetComponent<MissileShoot>().dir = firePos2.transform.forward;
             obj.GetComponent<MissileShoot>().speed = lange * 0.05f;
+            obj.GetComponent<MissileShoot>().isMasterMisill = false;
+            PhotonManager.Instance.misillListInScent.Add(obj);
         }
         PhotonManager.Instance.lange = 0; //쏘고나서 게이지 초기화
     }

@@ -36,6 +36,7 @@ public class RoomScene : MonoBehaviour
     private void Start()
     {
         photonManager = PhotonManager.Instance;
+        photonManager.isDie = false;
         photonManager.sendMyInfo = ShowUserRobotAndName;
         Debug.Log("sendMyInfo 등록");
         photonManager.deleteMyInfo = DeleteSlotInfo;

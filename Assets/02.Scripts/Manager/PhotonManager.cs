@@ -86,6 +86,12 @@ public class PhotonManager : MonoBehaviourPunCallbacks, IPunObservable
     public delegate void DeleteMyInfo(int admissionOrder);
     public DeleteMyInfo deleteMyInfo;
     public int slotOrder; //몇번째 슬롯에 내 정보가 표시되야 하는가?
+    public List<GameObject> misillListInScent = new List<GameObject>(); //씬에 생성되어 있는 미사일들 1발 혹은 2발
+    public int myDmg; //내 데미지
+    public int myAmor;//내 방어력
+    public int myHp;//내 체력
+    public bool isDie;//내가 죽엇는지 살았는지
+    public int aliveCnt; //살아있는사람 숫자
     private void Start()
     {
         dataManager = DataManager.Instance;
@@ -96,6 +102,22 @@ public class PhotonManager : MonoBehaviourPunCallbacks, IPunObservable
             inLobby = false;
             inRoom = false;
             //Connect();//연결하고
+        }
+
+    }
+    void FixedUpdate()
+    {
+        if(myHp<=0 && !isDie) //내체력이 0이고 아직 죽엇다는 표시가 안됫으면?
+        {
+            isDie = true; //죽엇다는거 체크 더이상 조건문 안으로 들어오지 않게
+            Call_MinusAliveCnt(); // 다른사용자에게 aliveCnt를 1 줄이라는 명령을 내림
+        }
+
+        if(aliveCnt ==1)
+        {
+            //1명만 남음 승자 결정
+            //점수 창을 띄워준다
+            Debug.Log("승자 결정");
         }
 
     }
@@ -224,7 +246,7 @@ public class PhotonManager : MonoBehaviourPunCallbacks, IPunObservable
         isMaster = false;
         //receiveId = false;
         receiveCnt = 0;
-        myOrder = 99;
+        myOrder = 99; //엑터 넘버가 들어갈곳
         readyCnt = 0;
         localPlayer = 0;
         Debug.Log(inLobby);
@@ -326,7 +348,7 @@ public class PhotonManager : MonoBehaviourPunCallbacks, IPunObservable
             {
                 //myOrder = i;
                 nowTurn = PhotonNetwork.PlayerList[0].ActorNumber;
-                myOrder = PhotonNetwork.LocalPlayer.ActorNumber;//엑터넘버를 순서로
+                //myOrder = PhotonNetwork.LocalPlayer.ActorNumber;//엑터넘버를 순서로
                 userArr[i] = myOrder;//엑터넘버를 넣을 예정
                 userReady[i] = true;
                 slotOrder = i;
@@ -663,7 +685,16 @@ public class PhotonManager : MonoBehaviourPunCallbacks, IPunObservable
     public void ChangeTurn(int num)
     {
         //포톤 플레이어 배열에서 몇번 인덱스 플레이어의 턴인가
-        nowTurn = num;//입장순서는 0번부터니까 엑터 넘버는 1부터시작이므로 1을빼준다
+        nowTurn = num;//현재 턴을 넘겨 받은 엑터 넘버로 바꿔준다
+        if(nowTurn == myOrder)
+        {
+            //바뀐 턴이 내턴이다?
+            //내체력이 0이하인지 검사한다 0이하면 플레이 불가능상태이므로 다시 턴을 넘겨주기 위해
+            if(myHp<=0)
+            {
+                Call_ChangeMasterClient();
+            }
+        }
     }
     #endregion
 
@@ -750,6 +781,54 @@ public class PhotonManager : MonoBehaviourPunCallbacks, IPunObservable
         {
             Debug.Log("deleteMyInfo ==null");
         }
+    }
+    #endregion
+
+    #region 씬에 있는 미사일을 동시에 폭파해서 동기화 하기위해
+    public void Call_DestroyMisillInScene()
+    {
+        photonView.RPC("DestroyMisillInScene", RpcTarget.All);
+    }
+    [PunRPC]
+    public void DestroyMisillInScene()
+    {
+        for(int i=0; i< misillListInScent.Count;i++)
+        {
+            Destroy(misillListInScent[i]);
+        }
+        misillListInScent.Clear(); //리스트는 비운다
+    }
+    #endregion
+
+    #region 누구에게 데미지를 입혔는지 알리기위해
+    /// <summary>
+    /// 이펙트 발생시 유저에게 맞았으면 다른 사용자들에게 내가 몇번 유저를 맟췃고 얼마만큼의 데미지를줬는지 알려준다
+    /// </summary>
+    /// <param name="actNum"></param>
+    /// <param name="damage"></param>
+    public void Call_CheckDamage(int actNum, int damage)
+    {
+        photonView.RPC("CheckDamage", RpcTarget.All, actNum, damage);
+    }
+    [PunRPC]
+    public void CheckDamage(int actNum, int damage)
+    {
+        if(actNum == myOrder)//내가 데미지 판정 대상이면?
+        {
+            myHp -= (damage - myAmor); //내 체력- (상대 공격력-내 방어력)
+        }
+    }
+    #endregion
+
+    #region 내가 죽엇다는것을 다른유저에게 알림 
+    public void Call_MinusAliveCnt()
+    {
+        photonView.RPC("MinusAliveCnt", RpcTarget.All);
+    }
+    [PunRPC]
+    public void MinusAliveCnt()
+    {
+        aliveCnt -= 1;
     }
     #endregion
     //#region 테스트용 봇 생성

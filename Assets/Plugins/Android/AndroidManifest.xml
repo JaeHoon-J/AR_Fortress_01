@@ -15,13 +15,14 @@
     </application>
     <!--권한 요청-->
     <uses-permission android:name="android.permission.CAMERA" /><!--카메라 허가-->
-    <uses-permission android:name="android.permission.VIBRATE" /><!--진동 허가-->
+	<!--uses-permission android:name="android.permission.VIBRATE" /-->
+	<!--진동 허가-->
     <!--uses-permission android:name="android.permission.INTERNET" /--><!--인터넷 허가???-->
     <!--uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /--><!--네트워크 상태 접근 허가?!!!-->
     
     <!--이것은 gps 권한 요청이래 uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /-->
     
     <!--uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /--><!--외부 저장소 읽고???-->
-    <!--uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /--><!--외부 저장소 쓰고???-->
+	<!--uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /--><!--외부 저장소 쓰고???-->
     <!--권한 요청 종료-->
 </manifest>

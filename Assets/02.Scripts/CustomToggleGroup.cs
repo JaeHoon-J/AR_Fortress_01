@@ -1,4 +1,5 @@
 ﻿
+using ExitGames.Client.Photon;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -20,8 +21,10 @@ public class CustomToggleGroup : ToggleGroup
     protected Sprite highlightImage;
     [SerializeField]
     protected Sprite normalImage;
+
     [SerializeField]
     protected StoreManager sm;
+
     [SerializeField]
     protected Toggle allToggle;
     [SerializeField]
@@ -31,9 +34,11 @@ public class CustomToggleGroup : ToggleGroup
     [SerializeField]
     protected Toggle legToggle;
 
+    protected SoundManager soundManager;
     // Start is called before the first frame update
     protected override void Start()
     {
+        soundManager = SoundManager.GetInstance();
         allToggle.onValueChanged.AddListener((value) => { ForChangingPanel("all"); });
         weaponToggle.onValueChanged.AddListener((value) => { ForChangingPanel("weapon"); });
         bodyToggle.onValueChanged.AddListener((value) => { ForChangingPanel("body"); });
@@ -50,6 +55,7 @@ public class CustomToggleGroup : ToggleGroup
     public void ForChangingPanel(string checkClicked)
     {
         Debug.Log("ㅇㅅㅇ");
+        soundManager.SetEffectClip("click");
         sm.DestroyChildObj();
         sm.ResetScroll();
         //if문 4개를 만들것임

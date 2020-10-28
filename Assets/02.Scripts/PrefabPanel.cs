@@ -21,6 +21,7 @@
     protected int price;
     protected string id;
 
+    protected SoundManager soundManager;
     // Start is called before the first frame update
     void Start()
     {
@@ -77,6 +78,7 @@
     }
     public void Choice()
     {
+        soundManager.SetEffectClip("click");
         //아이템이 구입되어 있는 상태면 바로 함수 종료하고 아래부분 미실행
         if(canBuy == false) 
         {
@@ -86,6 +88,7 @@
         else if (DataManager.Instance.myMoney < int.Parse(cost1.text))
         {
             Debug.Log("돈이 부족합니다.");
+            soundManager.SetEffectClip("error");
             Instantiate(noCoin, new Vector3(0,0,0), Quaternion.identity);
             return;
         }
@@ -99,6 +102,7 @@
     }
     public void Close()
     {
+        soundManager.SetEffectClip("click");
         Destroy(blackCanvas, 0.1f);
     }
 

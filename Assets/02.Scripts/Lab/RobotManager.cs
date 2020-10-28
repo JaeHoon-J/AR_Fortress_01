@@ -7,7 +7,7 @@ public class RobotManager : MonoBehaviour
     protected DBManager dbManager;
     public GameObject pivot;
     public GameObject assembleComplete;
-    
+    protected SoundManager soundManager;
     /// <summary>
     ///  GameManager의 Userinfo형태를 저장한다
     /// </summary>
@@ -35,11 +35,13 @@ public class RobotManager : MonoBehaviour
     }
     IEnumerator SetActiveFalse()
     {
+        soundManager.SetEffectClip("click");
         yield return new WaitForSeconds(0.5f);
         assembleComplete.gameObject.SetActive(false);
     }
     private void Start()
     {
+        soundManager = SoundManager.GetInstance();
         //DataManager.Instance
         dbManager = DBManager.GetInstance();
         dbManager.RecallBeforePrefab(); //이전 프리팹 정보를 가져오는것

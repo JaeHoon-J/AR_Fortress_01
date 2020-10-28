@@ -16,6 +16,7 @@ public class MainSceneButton : MonoBehaviour
     {
         soundManager = SoundManager.GetInstance();
         soundManager.SetBgmClip("lobby");
+        soundManager.SetEffectClip("scenestart");
         //dbManager = DBManager.GetInstance();
         //DataManager.Instance = DataManager.Instance.GetInstance();
         if(DataManager.Instance.userinfo.firstLogin == true)
@@ -29,10 +30,12 @@ public class MainSceneButton : MonoBehaviour
     }
     public void ExitBtn()
     {
+        soundManager.SetEffectClip("click");
         exit.gameObject.SetActive(true);
     }
     public void YesQuitBtn()
     {
+        soundManager.SetEffectClip("click");
 #if UNITY_EDITIOR
         UnityEditor.EditorApplication.isPlaying = false;
 #else
@@ -42,6 +45,7 @@ public class MainSceneButton : MonoBehaviour
     }
     public void NoQuitBtn()
     {
+        soundManager.SetEffectClip("click");
         exit.gameObject.SetActive(false);
     }
     /// <summary>
@@ -49,7 +53,7 @@ public class MainSceneButton : MonoBehaviour
     /// </summary>
     public void ToLab()
     {
-        soundManager.SetBgmClip("lab");
+        soundManager.SetEffectClip("movescene");
         SceneManager.LoadScene("TestLabUI");
     }
     /// <summary>
@@ -57,7 +61,7 @@ public class MainSceneButton : MonoBehaviour
     /// </summary>
     public void ToStore()
     {
-        soundManager.SetBgmClip("store");
+        soundManager.SetEffectClip("movescene");        
         SceneManager.LoadScene("TestStore");
     }
     /// <summary>
@@ -69,7 +73,7 @@ public class MainSceneButton : MonoBehaviour
         if(DataManager.Instance.beforeLeg !=null && DataManager.Instance.beforeBody !=null && DataManager.Instance.beforeWeapon !=null)
         {
             SceneManager.LoadScene("04.MakeRoom");
-            soundManager.SetBgmClip("makeRoom");
+            soundManager.SetEffectClip("movescene");
         }
         else
         {
@@ -80,10 +84,12 @@ public class MainSceneButton : MonoBehaviour
     }
     public void ToOption()
     {
+        soundManager.SetEffectClip("scenestart");
         option.gameObject.SetActive(true);
     }
     public void ToCloseOption()
     {
+        soundManager.SetEffectClip("movescene");
         option.gameObject.SetActive(false);
     }
 }

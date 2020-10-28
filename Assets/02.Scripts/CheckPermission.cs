@@ -8,17 +8,18 @@ public class CheckPermission : MonoBehaviour
     //protected PhotonManager.Instance PhotonManager.Instance = null;
     //PhotonManager.Instance.Instance
     //어떻게 퍼미션을 얻을지 고민이 많다.
-
-    bool cameraCheck = false;
-    bool storageCheck = false;
-    float timeCheck =0;
+    protected SoundManager soundManager;
+    protected bool cameraCheck = false;
+    protected bool storageCheck = false;
+    protected float timeCheck =0;
     //이것은 우리 권한 요청 할 때 띄워주는것
     public GameObject forRequestPermission;
     //이것은 우리 권한 요청할 때 확인 하는 것.
-    bool btnCheck = false;
+    protected bool btnCheck = false;
     // Start is called before the first frame update
     void Start()
     {
+        soundManager = SoundManager.GetInstance();
         //PhotonManager.Instance = PhotonManager.Instance.GetInstance();
         forRequestPermission.gameObject.SetActive(false);
         StartCoroutine("PermissionCheck");//먼저 무조건 퍼미션 체크를 시작하자.
@@ -31,6 +32,7 @@ public class CheckPermission : MonoBehaviour
     public void YesCheck()
     {
         Debug.Log("우리 것 접근권한 ok");
+        soundManager.SetEffectClip("click");
         btnCheck = true;
         forRequestPermission.gameObject.SetActive(false);
     }

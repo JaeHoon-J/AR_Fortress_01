@@ -6,13 +6,15 @@ public class RoomScene : MonoBehaviour
 {
     public void StartGame()
     {
+        soundManager.SetEffectClip("movescene");
         PhotonManager.Instance.StartGame();
     }
     public void ToLobby()
     {
+        soundManager.SetEffectClip("movescene");
         PhotonManager.Instance.LeaveRoom();
     }
-
+    protected SoundManager soundManager;
     [SerializeField]
     protected Text nickName0;
     [SerializeField]
@@ -31,7 +33,8 @@ public class RoomScene : MonoBehaviour
     
     private void Awake()
     {
-
+        soundManager = SoundManager.GetInstance();
+        soundManager.SetEffectClip("scenestart");
     }
     private void Start()
     {

@@ -21,8 +21,10 @@ public class Inventory : MonoBehaviour
     //시작시 레그 인벤토리가 켜져있으므로 Leg 메뉴를 Selected 상태로 시작. 
     public bool buttonDown;
 
+    protected SoundManager soundManager;
     void Start()
     {
+        soundManager = SoundManager.GetInstance();
         dataManager = DataManager.Instance;
         //시작할때 curritem에 다리 인벤토리를 담아둠 - 인벤토리 켠상태로 시작시 curritem에 안담겨서 아래코드 대로할시 버그생김
         //[09.28] 피드백 -  시작할떄 default 인벤토리 [먼저 조립되야하는 다리부분을] 켜놔야 좋을것 같다고 해서 수정
@@ -30,6 +32,8 @@ public class Inventory : MonoBehaviour
         bodyBtn.GetComponent<Button>().onClick.AddListener(() => { PanelButton("body"); });
         legBtn.GetComponent<Button>().onClick.AddListener(() => { PanelButton("leg"); });
         PanelButton("leg");
+        soundManager.SetBgmClip("lab");
+        soundManager.SetEffectClip("scenestart");
     }
 /*    public void SelectedButton()
     {
@@ -76,19 +80,23 @@ public class Inventory : MonoBehaviour
     }*/
     public void Inven0Close()
     {
+        soundManager.SetEffectClip("click");
         inventory[0].SetActive(false);
     }
     public void Inven1Close()
     {
+        soundManager.SetEffectClip("click");
         inventory[1].SetActive(false);
     }
     public void Inven2Close()
     {
+        soundManager.SetEffectClip("click");
         inventory[2].SetActive(false);
     }
     //좌 상단 Back Key  클릭시 로비씬으로 이동
     public void BackToMainScene()
     {
+        soundManager.SetEffectClip("movescene");
         //나가기 전에 변경사항이 있을때 저장을 안했으면 저장전 상태도 되돌린다
         if (dataManager.userinfo.selectedLeg != dataManager.beforeLegName)
         {
@@ -132,6 +140,7 @@ public class Inventory : MonoBehaviour
     
     void PanelButton(string checkButton)
     {
+        soundManager.SetEffectClip("click");
         if (currItem != null)
         {
             Debug.Log("ㅇㅇㅇ");

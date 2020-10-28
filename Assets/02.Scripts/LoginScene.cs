@@ -10,12 +10,16 @@ public class LoginScene : MonoBehaviour
     protected LoginManager loginManager = null;
     public GameObject loginBtn;
     public GameObject loadingGauge;
+    protected SoundManager soundManager;
     private void Start()
     {
+        soundManager = SoundManager.GetInstance();
         loginManager = LoginManager.GetInstance();
+        soundManager.SetEffectClip("scenestart");
     }
     public void Login()
     {
+        soundManager.SetEffectClip("click");
         loginBtn.gameObject.SetActive(false);
         loadingGauge.gameObject.SetActive(true);
         //버튼 클리갛면 로그인 처리후 로비로 입장

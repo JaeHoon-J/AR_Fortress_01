@@ -33,9 +33,11 @@ public class StoreManager : MonoBehaviour
     [SerializeField]
     protected Scrollbar scrollbar;
 
+    protected SoundManager soundManager;
     // Start is called before the first frame update
     void Start()
     {
+        soundManager = SoundManager.GetInstance();
         dataManager = DataManager.GetInstance();
         dbManager = DBManager.GetInstance();
         //델리게이트를 등록하는것??
@@ -59,6 +61,8 @@ public class StoreManager : MonoBehaviour
         SetUsermoney(dbManager.GetMyMoney());
         OnOffButton();//맨 처음 scrollvalue가 0이기 때문에 오른쪽 버튼 0으루 만들어줘야지,
         scrollbar.onValueChanged.AddListener((value) => { OnOffButton(); });
+        soundManager.SetEffectClip("scenestart");
+        soundManager.SetBgmClip("store");
     }
     // Update is called once per frame
     void Update()
@@ -67,12 +71,14 @@ public class StoreManager : MonoBehaviour
     }
     public void OnClickedRightBtn()
     {
+        soundManager.SetEffectClip("click");
         if(checkNumber ==1){scrollbar.value += 0.312f;}
         else{ scrollbar.value +=1;}
     }
     public void OnClikedLeftBtn()
     {
-        if(checkNumber ==1){scrollbar.value -= 0.312f;}
+        soundManager.SetEffectClip("click");
+        if (checkNumber ==1){scrollbar.value -= 0.312f;}
         else{ scrollbar.value -=1;}
     }
     public void ResetScroll()
@@ -110,6 +116,7 @@ public class StoreManager : MonoBehaviour
     //뒤로가기 버튼 넣음 됨!
     public void OnClickedBackButton()
     {
+        soundManager.SetEffectClip("movescene");
         SceneManager.LoadScene("03.Lobby");
     }
 

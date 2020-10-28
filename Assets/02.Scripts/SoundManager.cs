@@ -100,7 +100,7 @@ public class SoundManager : MonoBehaviour
     protected AudioClip explosionSoundClip;
     private void Start()
     {
-        bgmSource = AddAudio(true, false, 0.75f);//bgm audio source 추가
+        bgmSource = AddAudio(true, false, 0.3f);//bgm audio source 추가
         effectSource = AddAudio(false, false, 1);//effect audio source 추가
         walkSource = AddAudio(true, true, 1f);
         SetBgmClip("intro");//bgm 시작
@@ -122,12 +122,8 @@ public class SoundManager : MonoBehaviour
     public void SetONOFFBgmFromOption(bool onOff)
     {
         bgmOk = onOff;
-        if(bgmOk)
-        {
-            bgmSource.Play();
-        }
-        else
-        {
+        if(!bgmOk)
+        {        
             bgmSource.Stop();
         }
     }
@@ -139,6 +135,10 @@ public class SoundManager : MonoBehaviour
     public void SetONOFFEffectFromOption(bool onoff)
     {
         effectOk = onoff;
+        if(!effectOk)
+        {
+            effectSource.Stop();
+        }
     }
     public void SetEffectVolumeFromOption(float value)
     {
@@ -154,7 +154,7 @@ public class SoundManager : MonoBehaviour
         }
         bgmSource.Play();
     }
-    //배경음악 넣기 위한 변수에 넣는 함수.
+    //외부에서 배경음악 넣기 위한 변수에 넣는 함수.
     public void SetBgmClip(string checkBgm)
     {
         
@@ -190,32 +190,38 @@ public class SoundManager : MonoBehaviour
         if(!effectOk) return;
         effectSource.Play();
     }
-    //effect를 넣는 함수.
+    //effect를 넣는 함수. 외부에서 여기를 통해서 이펙트를 넣으려고 한다.
     public void SetEffectClip(string checkBgm)
     {
         
         switch(checkBgm)
         {
-            case "intro":
-                EffectSession(introLoginSceneClip);
+            case "click":
+                EffectSession(clickSoundClip);
                 break;
-            case "lobby":
-                EffectSession(lobbySceneClip);
+            case "movescene":
+                EffectSession(moveSceneSoundClip);
                 break;
-            case "store":
-                EffectSession(storeSceneClip);
+            case "scenestart":
+                EffectSession(sceneStartSoundClip);
                 break;
-            case "lab":
-                EffectSession(labSceneClip);
+            case "labassemble":
+                EffectSession(labAssembleSoundClip);
                 break;
-            case "makeRoom":
-                EffectSession(makeAndReadyRoomSceneClip);
+            case "error":
+                EffectSession(errorSoundClip);
                 break;
-            case "play":
-                EffectSession(playSceneClip);
+            case "tank":
+                EffectSession(tankSoundClip);
                 break;
-            case "result":
-                EffectSession(resultTimeClip);
+            case "walk":
+                EffectSession(walkClip);
+                break;
+            case "shot":
+                EffectSession(shotSoundClip);
+                break;
+            case "explosion":
+                EffectSession(explosionSoundClip);
                 break;
         }
     }

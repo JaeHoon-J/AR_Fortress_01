@@ -27,7 +27,8 @@ public class CheckPermission : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {   
+    {
+        timeCheck += (Time.deltaTime * 10);
     }
     public void YesCheck()
     {
@@ -38,7 +39,7 @@ public class CheckPermission : MonoBehaviour
     }
     IEnumerator PermissionCheck() 
     {
-        timeCheck += (Time.deltaTime * 10);
+        
         //여기서 권한 확인. 하나하나 해야 되나 싶기도 하다. 
         if (Permission.HasUserAuthorizedPermission(Permission.Camera)==false)//카메라 권한 체크 시작
         {
@@ -111,7 +112,7 @@ public class CheckPermission : MonoBehaviour
             */
 
             //이 반복을 끝내기 위해서 
-            if( timeCheck > 15)
+            if( timeCheck > 10)
             //여기는 혹시 만약에 시간이 너무 오래 걸린다 싶으면 그냥 경고창 하고 강제종료시키자. 
             {
                 Debug.Log("너무 오랜 시간 필수권한을 동의하지 않아 강제 종료하겠습니다.");//근데 이렇게 해도 되는건가?

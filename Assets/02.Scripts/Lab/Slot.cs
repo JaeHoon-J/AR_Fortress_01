@@ -24,11 +24,12 @@ public class Slot : MonoBehaviour
     public Image lockitem;
     public bool activeSlot;
 
-
+    protected SoundManager soundManager;
 
     public Transform objectPivot;
     void Start()
     {
+        soundManager = SoundManager.GetInstance();
         dbManager = DBManager.GetInstance();
         activeSlot = false;
         //인벤토리에 아이템이 들어와 있으면 아이템의 버튼 활성화 ( Default 상태의 잠금 해제)
@@ -60,6 +61,7 @@ public class Slot : MonoBehaviour
         //액티브 상태일때
         if (activeSlot == true)
         {
+            soundManager.SetEffectClip("click");
             selectImage.sprite = null;
             selectImage.sprite = img.sprite;
             //무기 리스트일때

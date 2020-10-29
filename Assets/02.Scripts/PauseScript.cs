@@ -5,8 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PauseScript : MonoBehaviour
 {
-    [SerializeField]
-    protected GameObject pause;
+    
     [SerializeField]
     protected GameObject setting;
 
@@ -24,14 +23,17 @@ public class PauseScript : MonoBehaviour
 
     public void ClosePause()
     {
-        pause.SetActive(false);
+        soundManager.SetEffectClip("click");
+        this.gameObject.SetActive(false);
     }
     public void OpenSetting()
     {
+        soundManager.SetEffectClip("click");
         setting.SetActive(false);
     }
     public void ExitGames()
     {
+        soundManager.SetEffectClip("movestart");
         SceneManager.LoadScene("03.Lobby");
     }
 }

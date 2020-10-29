@@ -5,12 +5,17 @@ using UnityEngine.UI;
 
 public class PowerManager : MonoBehaviour
 {
+    private RectTransform rectComponent;
     [SerializeField]
-    protected Slider powerGage;
-    // Start is called before the first frame update
+    protected Image imageComp;
+
+
+    // Use this for initialization
     void Start()
     {
-        powerGage.value = PhotonManager.Instance.lange;
+        rectComponent = GetComponent<RectTransform>();
+        imageComp = rectComponent.GetComponent<Image>();
+        imageComp.fillAmount = (PhotonManager.Instance.lange/15);
     }
 
     // Update is called once per frame
